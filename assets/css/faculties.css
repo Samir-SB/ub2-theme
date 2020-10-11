@@ -1,0 +1,134 @@
+/* ======== end init ========== */
+/* ======== faculties secition ========== */
+#faculties {
+  height: 100%;
+}
+
+#faculties ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+  margin: 3rem auto;
+  list-style: none;
+}
+
+#faculties li {
+  opacity: 0;
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+#faculties li.fade {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+#faculties li div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--bg-lightgrey);
+  height: 260px;
+}
+
+#faculties li div::before {
+  top: 0;
+  background-color: var(--clr-golden);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#faculties li div::after {
+  bottom: 0;
+  background-color: var(--bg-brown-darken);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#faculties li div::before,
+#faculties li div::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 0;
+}
+
+#faculties li div:hover::before {
+  height: 1rem;
+}
+
+#faculties li div:hover::after {
+  height: 100%;
+}
+
+#faculties li div:hover .title a {
+  color: #fff;
+}
+
+#faculties .title {
+  margin-top: calc(4rem + 60px);
+  text-align: center;
+  line-height: 1;
+}
+
+#faculties .title a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #616161;
+}
+
+#faculties .under-line {
+  position: absolute;
+  width: 2rem;
+  height: 0.5rem;
+  background-color: var(--clr-golden);
+  bottom: 2rem;
+}
+
+.svg-icon,
+li div::before,
+.title,
+.under-line {
+  z-index: 1;
+}
+
+.svg-icon {
+  position: absolute;
+  max-width: 60px;
+  top: 2rem;
+}
+
+.title {
+  margin-top: calc(4rem + 60px);
+  text-align: center;
+  line-height: 1;
+}
+
+.title a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #616161;
+}
+
+.under-line {
+  position: absolute;
+  width: 2rem;
+  height: 0.5rem;
+  background-color: var(--clr-golden);
+  bottom: 2rem;
+}
+/*# sourceMappingURL=faculties.css.map */
