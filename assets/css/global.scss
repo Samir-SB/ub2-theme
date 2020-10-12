@@ -3,10 +3,63 @@
   --bg-lightgrey: #f7f7f7;
   --clr-golden: #b7924b;
   --bg-brown-darken: #453d48;
+  --margin-space: 1rem;
 }
 
 
 #top {
   height: 100vh;
   background-image: url(../images/cuddy.jpg);
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-7 {
+  width: calc(58.33% - var(--margin-space));
+}
+.col-6 {
+  width: calc(50% - var(--margin-space));
+}
+
+.col-5 {
+  width: calc(41.66% - var(--margin-space));
+}
+
+.col-4 {
+  width: calc(33.33% - var(--margin-space));
+}
+
+.col-3 {
+  width: calc(25% - var(--margin-space));
+}
+
+.col-2 {
+  width: calc(16.66% - var(--margin-space));
 }
