@@ -1,6 +1,6 @@
-/* @import './normalize.css'; */
+@import './normalize.css';
 @import './global.css';
 @import './faculties.css';
 @import './current-event.css';
-@import './stats.css';
+@import './counter.css';
 @import './our-services.css'

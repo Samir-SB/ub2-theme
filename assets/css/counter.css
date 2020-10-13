@@ -1,0 +1,54 @@
+#counter {
+  --color-primary: #ffe600;
+  background-image: url(../images/eng-web.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+
+#counter::before {
+  content: '';
+  right: 0;
+  bottom: 0;
+  background: rgba(19, 19, 22, 0.9);
+  z-index: -1;
+}
+
+#counter h2 {
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+  line-height: 1.8;
+  color: #fff;
+  z-index: 2;
+}
+
+#counter p {
+  color: #fff;
+}
+
+#counter .counter-wrapper {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  width: 85%;
+}
+
+#counter .counter-wrapper .col-3 {
+  margin: 0 1rem;
+  padding: 2rem 1rem;
+}
+
+#counter .counter-wrapper .number {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+#counter .counter-wrapper .text {
+  text-transform: uppercase;
+  font-size: small;
+  margin-top: -5px;
+  color: var(--color-primary);
+}
+/*# sourceMappingURL=counter.css.map */

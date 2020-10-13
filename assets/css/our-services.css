@@ -1,4 +1,6 @@
 #services {
+  --inner-height: 75%;
+  --primary-color: #c52b2b;
   height: 530px;
 }
 
@@ -11,18 +13,25 @@
 }
 
 #services .services--info {
-  width: 100%;
-  border: salmon 1px solid;
-  padding: 60px 20px 100px 100px;
+  width: 350px;
+  height: var(--inner-height);
 }
 
 #services .services--info h2 {
+  margin-top: -2rem;
   font-size: 3rem;
   line-height: 1.8;
 }
 
 #services .services--info p {
   margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+#services .services--info .btn-primary {
+  background-color: var(--primary-color);
+  padding: 0.5em 2em;
+  border-style: none;
 }
 
 #services .services--square-wrapper {
@@ -56,7 +65,7 @@
 
 #services .services--square-wrapper .services--square {
   color: black;
-  height: 75%;
+  height: var(--inner-height);
   width: 100%;
   margin-left: -7rem;
   -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.568);
