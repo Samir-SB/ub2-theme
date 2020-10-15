@@ -42,7 +42,7 @@
 
 #current-event div.move-to-left {
   background-color: #f1f2f4;
-  background-color: #F7882F;
+  background-color: #2f4b57b7;
   margin-left: -150px;
   padding: 50px;
   color: #fff;
@@ -59,11 +59,13 @@
 #current-event div.move-to-left p {
   line-height: 1.8;
   margin-bottom: 1.5rem;
+  color: #fff;
 }
 
 #current-event div.move-to-left a {
   font-weight: bold;
   font-size: small;
+  color: #421115;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
