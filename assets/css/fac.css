@@ -1,41 +1,50 @@
-#fac .information-container {
-  /*background: #000000;
-    background: -webkit-linear-gradient(45deg, #434343, #000000);
-    background: linear-gradient(45deg, #434343, #000000);
-  */
-  background: #536976;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#292E49), to(#536976));
-  background: linear-gradient(to right, #292E49, #536976);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+#fac {
+  position: relative;
+  background-image: url("/assets/images/amphy.jpg");
   background-size: cover;
   padding: 60px 0;
+  z-index: -1;
 }
 
-#fac .inner-container {
+#fac::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000000;
+  /* fallback for old browsers */
+  opacity: 0.85;
+  z-index: 0;
+}
+
+#fac .information-container .inner-container {
   width: 100%;
   max-width: 1200px;
   margin: auto;
   padding: 0 20px;
   overflow: hidden;
+  z-index: 2;
 }
 
-#fac .section-title {
+#fac .information-container .section-title {
   text-align: center;
-  color: #ddd;
+  color: #fff;
   text-transform: uppercase;
   font-size: 30px;
+  z-index: 2;
 }
 
-#fac .border {
+#fac .information-container .border {
   width: 160px;
   height: 2px;
   background: #cb2d3e;
   margin: 40px auto;
+  z-index: 2;
 }
 
-#fac .service-container {
+#fac .information-container .service-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,17 +53,19 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 2;
 }
 
-#fac .service-box {
+#fac .information-container .service-box {
   width: 25%;
   padding: 10px;
   text-align: center;
-  color: #ddd;
+  color: #fff;
   cursor: pointer;
+  z-index: 2;
 }
 
-#fac .service-icon {
+#fac .information-container .service-icon {
   display: inline-block;
   width: 70px;
   height: 70px;
@@ -63,44 +74,49 @@
           transform: rotate(45deg);
   margin-bottom: 30px;
   margin-top: 16px;
+  z-index: 2;
 }
 
-#fac .service-icon i {
+#fac .information-container .service-icon i {
   line-height: 70px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   font-size: 26px;
+  z-index: 2;
 }
 
-#fac .service-box:hover .service-icon {
+#fac .information-container .service-box:hover .service-icon {
   background: #cb2d3e;
-  color: #ddd;
+  color: #fff;
+  z-index: 2;
 }
 
-#fac .service-title {
+#fac .information-container .service-title {
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  z-index: 2;
 }
 
-#fac .service-title .description {
+#fac .information-container .service-title .description {
   font-size: 14px;
+  z-index: 2;
 }
 
 @media screen and (max-width: 960px) {
-  #fac .service-title .service-box {
+  .service-box {
     max-width: 45%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #fac .service-title .service-box {
+  .service-box {
     max-width: 50%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  #fac .service-title .service-box {
+  .service-box {
     max-width: 100%;
   }
 }

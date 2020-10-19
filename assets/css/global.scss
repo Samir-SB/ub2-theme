@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 :root {
   --bg-lightgrey: #f7f7f7;
   --clr-golden: #b7924b;
@@ -6,12 +6,15 @@
   --margin-space: 1rem;
 }
 
-
 #top {
   height: 100vh;
   background-image: url(../images/cuddy.jpg);
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 .d-flex {
   display: flex;
   flex-wrap: wrap;

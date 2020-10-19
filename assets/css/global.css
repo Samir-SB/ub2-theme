@@ -11,6 +11,11 @@
   background-image: url(../images/cuddy.jpg);
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
