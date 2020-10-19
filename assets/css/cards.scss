@@ -1,0 +1,140 @@
+#cards {
+  .block-title {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 2.5;
+    margin-bottom: 30px;
+  }
+
+
+  /* background-color: var(--light-grey-bg); */
+  background-color: #ebecf0;
+  color: var(--light-gray-color);
+
+
+  .row {
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .card {
+    background-color: #fff;
+    width: 350px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+  }
+
+  .card:hover {
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+    transform: translateY(-15px);
+  }
+
+  .card:hover img {
+    /* transform: scale(1.1) ; */
+  }
+
+  .card .image-wrapper {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .image-fluid {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-content {
+    padding: 5px 1rem;
+    color: black;
+    font-size: 1.2rem;
+  }
+
+  .card-title {
+    color: darksalmon;
+    text-transform: uppercase;
+    letter-spacing: 1.5xp;
+    margin-block-end: -1rem;
+  }
+
+  .card .date-wrapper {
+    overflow: hidden;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  .card span.date {
+    font-size: small;
+    font-weight: bold;
+    border-radius: 16px;
+    color: #d1d4dd;
+    margin-left: 3px;
+  }
+
+  i.icon {
+    display: inline-block;
+    width: 1rem;
+    color: #d1d4dd;
+  }
+
+  .card p {
+    margin-bottom: 30px;
+  }
+
+  a.btn {
+    text-decoration: none;
+    background-color: darksalmon;
+    color: #fff;
+    padding: 5px 15px;
+  }
+
+  .btn-rounded {
+    border-radius: 16px;
+  }
+
+  @media screen and (max-width: 768px) {}
+
+  @media screen and (max-width: 414px) {
+
+    #card-with-image .card {
+      background: none;
+      overflow: hidden;
+    }
+
+    .card .image-wrapper {
+      height: fit-content;
+    }
+
+    .card-title-wrapper {
+      line-height: 1rem;
+    }
+
+    .card-title {
+      color: #fff;
+      padding-bottom: 20px;
+
+    }
+
+    .card-content {
+      background-image: linear-gradient(#74767b61, #092a3c);
+      ;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .card-content p,
+    a.read-more,
+    .date,
+    i.icon {
+      display: none;
+    }
+  }
+}

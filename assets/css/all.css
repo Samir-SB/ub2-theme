@@ -1,5 +1,7 @@
 @import './normalize.css';
 @import './global.css';
+@import './cards.css';
+@import './events-slide.css';
 @import './fac.css';
 @import './faculties.css';
 @import './current-event.css';

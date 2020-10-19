@@ -72,3 +72,16 @@ const counterObserver = new IntersectionObserver((entries, observer) => {
 observerFade.observe(fac);
 observer.observe(ce);
 counterObserver.observe(counterSection);
+
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 3,
+  spaceBetween: 15,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});

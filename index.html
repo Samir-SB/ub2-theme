@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -21,6 +31,295 @@
   <body>
     <section id="top"></section>
 
+    <section id="cards" class="section">
+      <div class="container">
+        <h2 class="block-title">Card With Image</h2>
+        <div class="row">
+          <div class="card">
+            <div class="image-wrapper">
+              <img
+                src="./images/join-liberty-as-a-champion-for-christ-20190903_0386KT2.jpg"
+                alt=""
+                class="image-fluid"
+              />
+              <div class="image-caption"></div>
+            </div>
+
+            <div class="card-content">
+              <div class="card-title-wrapper">
+                <h3 class="card-title">Card One</h3>
+                <div class="date-wrapper">
+                  <i class="icon">
+                    <svg
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span class="date"> 14 sept 2020</span>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolorum id unde pariatur eveniet
+              </p>
+              <a href="#" class="btn btn-rounded btn-outline read-more"
+                >read more</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image-wrapper">
+              <img
+                src="./images/happyrebeltherapy.com_.five_.people.jpg"
+                alt=""
+                class="image-fluid"
+              />
+              <div class="image-caption"></div>
+            </div>
+
+            <div class="card-content">
+              <div class="card-title-wrapper">
+                <h3 class="card-title">Card One</h3>
+                <div class="date-wrapper">
+                  <i class="icon">
+                    <svg
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span class="date"> 14 sept 2020</span>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolorum id unde pariatur eveniet adipisicing elit. Dolorum id
+                unde pariatur eveniets
+              </p>
+              <a href="#" class="btn btn-rounded btn-outline read-more"
+                >read more</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image-wrapper">
+              <img
+                src="./images/University-of-St-Andrews.jpg"
+                alt=""
+                class="image-fluid"
+              />
+              <div class="image-caption"></div>
+            </div>
+
+            <div class="card-content">
+              <div class="card-title-wrapper">
+                <h3 class="card-title">Card One</h3>
+                <div class="date-wrapper">
+                  <i class="icon">
+                    <svg
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span class="date"> 14 sept 2020</span>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolorum id unde pariatur eveniet
+              </p>
+              <a href="#" class="btn btn-rounded btn-outline read-more"
+                >read more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="half-slide" class="half-slide" style="display: none">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <div class="static-part">
+          <div></div>
+          <div>
+            <h6>This Novemeber</h6>
+            <h2>Become a part of something great</h2>
+            <p>
+              We enjoy being a multi-denominational church where we work
+              together, worship together, and grow together.
+            </p>
+            <a href="#" class="all-events">
+              <i class="icon-plus"></i>View all events</a
+            >
+          </div>
+        </div>
+
+        <div class="slide-wrapper swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="circle">
+                  <p>5</p>
+                  <span>Feb</span>
+                </div>
+                <h4>
+                  <a href="#" class="card-title"
+                    >5 Schoo Mission Intensive Training</a
+                  >
+                </h4>
+                <div class="card-info">
+                  <div class="date-wrapper">
+                    <i></i>
+                    <div class="date">
+                      <span class="start-day">Friday, 1:00 pc</span>
+                      <span class="end-day">Thursday, 3:30 pc</span>
+                    </div>
+                  </div>
+                  <div class="address-wrapper">
+                    <i></i>
+                    <span> 233 Main St. New York, United States</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-outline">Learn More</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="circle">
+                  <p>4</p>
+                  <span>Feb</span>
+                </div>
+                <h4>
+                  <a href="#" class="card-title">4 Mission School</a>
+                </h4>
+                <div class="card-info">
+                  <div class="date-wrapper">
+                    <i></i>
+                    <div class="date">
+                      <span class="start-day">Friday, 1:00 pc</span>
+                      <span class="end-day">Thursday, 3:30 pc</span>
+                    </div>
+                  </div>
+                  <div class="address-wrapper">
+                    <i></i>
+                    <span> 233 Main St. New York, United States</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-outline">Learn More</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="circle">
+                  <p>3</p>
+                  <span>Feb</span>
+                </div>
+                <h4>
+                  <a href="#" class="card-title">3 Training School</a>
+                </h4>
+                <div class="card-info">
+                  <div class="date-wrapper">
+                    <i> </i>
+                    <div class="date">
+                      <span class="start-day">Friday, 1:00 pc</span>
+                      <span class="end-day">Thursday, 3:30 pc</span>
+                    </div>
+                  </div>
+                  <div class="address-wrapper">
+                    <i></i>
+                    <span> 233 Main St. New York, United States</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-outline">Learn More</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="circle">
+                  <p>2</p>
+                  <span>Feb</span>
+                </div>
+                <h4>
+                  <a href="#" class="card-title">2 work Mission Intensive </a>
+                </h4>
+                <div class="card-info">
+                  <div class="date-wrapper">
+                    <i></i>
+                    <div class="date">
+                      <span class="start-day">Friday, 1:00 pc</span>
+                      <span class="end-day">Thursday, 3:30 pc</span>
+                    </div>
+                  </div>
+                  <div class="address-wrapper">
+                    <i></i>
+                    <span> 233 Main St. New York, United States</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-outline">Learn More</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="circle">
+                  <p>1</p>
+                  <span>Feb</span>
+                </div>
+                <h4>
+                  <a href="#" class="card-title"
+                    >1 Mission Intensive Training School</a
+                  >
+                </h4>
+                <div class="card-info">
+                  <div class="date-wrapper">
+                    <i></i>
+                    <div class="date">
+                      <span class="start-day">Friday, 1:00 pc</span>
+                      <span class="end-day">Thursday, 3:30 pc</span>
+                    </div>
+                  </div>
+                  <div class="address-wrapper">
+                    <i></i>
+                    <span> 233 Main St. New York, United States</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-outline">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
     <section id="fac">
       <!-- partial:index.partial.html -->
       <div class="information-container">
@@ -103,7 +402,7 @@
     </section>
 
     <!-- Faculties Section -->
-    <section id="faculties">
+    <section id="faculties" style="display: none">
       <h2 class="display-4 text-center mt-5">Faculties</h2>
       <ul class="list-grid">
         <div class="container-fluid">
@@ -323,6 +622,9 @@
       </div>
     </section>
   </body>
+  <!-- Swiper js -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <script src="./assets/js/main.js"></script>
 </html>
