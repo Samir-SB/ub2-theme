@@ -42,13 +42,14 @@
 
 #current-event div.move-to-left {
   background-color: #f1f2f4;
-  background-color: #ff5722;
   margin-left: -150px;
   padding: 50px;
-  color: #fff;
+  color: #363636;
   -webkit-transform: translateX(100px);
           transform: translateX(100px);
   opacity: 0;
+  -webkit-box-shadow: 0 0 10px #00000045;
+          box-shadow: 0 0 10px #00000045;
 }
 
 #current-event div.move-to-left h2 {
@@ -59,7 +60,7 @@
 #current-event div.move-to-left p {
   line-height: 1.8;
   margin-bottom: 1.5rem;
-  color: #fff;
+  color: #363636;
 }
 
 #current-event div.move-to-left a {
