@@ -1,0 +1,272 @@
+
+
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* padding-top: 30px; */
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.overlay{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(102, 140, 255);
+    opacity:-1;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background: rgba(29, 33, 61, 0.5);
+    padding: 0 30px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 4;
+    
+   
+}
+
+.search-box{
+    overflow: hidden;
+    width:250px;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+
+ .hero-section button{
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    transition: 1s;
+    border: none;
+    background: rgba(29, 33, 61, 0.5);
+    width: 40px;
+    height: 40px;
+    color: orangered;
+    font-size: unset;
+}
+
+.hero-section button::before{
+    height: 40px;
+    width: 2px;
+    content: '';
+    background: orangered;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 1s;
+}
+
+.search-box .active button::before{ 
+    transition: .25s;
+    left: -210px;
+    animation: hidden 1s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hidden{ 
+   100% {
+       opacity: 0;
+   }
+}
+
+input:focus {
+    outline: none;
+}
+button:focus{
+    outline: none;
+}
+
+ .search-box.active{ 
+    animation: shape 1s ease-in;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes shape {
+    100%{
+        border-radius: 25px;
+    }
+}
+
+
+
+@keyframes show {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+input{ 
+    transition: 1s;
+    width: 210px;
+    height: 40px;
+    /* transform: translateX(10em); */
+    padding-left: 20px;
+    border: none;
+    color: rgba(29, 33, 61, 0.5);
+}
+
+
+
+.ub2-logo{
+    width: 155px;  
+}
+.ub2-logo img{
+    width: 60px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    height: 60px;
+    left: -10%;
+    
+}
+nav{
+    flex: 1;
+    margin-left: 25%;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 70px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 14px;
+    font-weight: bold;
+
+}   
+/* .sidebar{
+    width: 155px;
+    height: 100vh;
+    background: rgba(29, 31, 58, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.search{
+    width: 25px;
+    display: block;
+    margin: 120px auto 0;
+}
+
+.social-media{
+    width: 20px;
+    display: block;
+    margin: 220px auto 0;
+    text-align: center;
+}
+
+.social-media img{
+    height: 25px;
+    margin-bottom: 50px;
+}
+
+.information{
+    width: 30px;
+    position: absolute;
+    left: 40%;
+    top: 95%;
+    
+} */
+
+.slide-container{
+    width: 600px;
+    height: 250px;
+    position:absolute;
+    left: 14%;
+    top: 57%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+#slider{
+    display: inline-flex;
+    transition: 0.5s ; 
+    
+}
+
+.slide-content{
+    width: 600px;
+    height: 250px;
+
+}
+.slide-content h1{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 100;
+    margin: 10px 0;    
+}
+
+.slide-content p{
+    color: #dddddd;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.slide-content a{
+    background-color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 35px;
+    margin-top: 25px;
+    display: inline-block;
+    color: #555;
+}
+
+.slide-controler{
+    width: 1px;
+    height: 320px;
+    display: block;
+    background: #c0c0c0;
+    position: absolute;
+    top: 55%;
+    right: 50px;
+    transform: translateY(-50%);
+}
+
+#slide1, #slide2, #slide3, #slide4{
+    height: 80px;
+    width: 10px;
+    cursor: pointer;   
+    transform:translateX(-50%)    
+}
+
+#active{
+    width: 5px;
+    height: 80px;
+    border-radius: 10px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+
+    
+}
+
+nav ul li:hover {
+border-bottom: 2px solid #fff;
+padding-top: 2px;
+transition:0.1s ;
+animation-delay:0.5s ;
+
+}
+
+
